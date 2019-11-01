@@ -1,12 +1,12 @@
 package lec8.Task4;
 
 public class Washer {
-    public boolean getIsWorking() {
-        return isWorking;
-    }
-
     public void setWorking(boolean working) {
         isWorking = working;
+    }
+
+    private void drainWater() {
+        System.out.println("Вода сливается");
     }
 
     boolean isWorking;
@@ -27,10 +27,6 @@ public class Washer {
         } finally {
             drainWater();
         }
-    }
-
-    private void drainWater() {
-        System.out.println("Вода сливается");
     }
 }
 

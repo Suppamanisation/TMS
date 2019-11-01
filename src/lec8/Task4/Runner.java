@@ -9,7 +9,6 @@ public class Runner {
     public static void main(String[] args) {
         Washer washer = new Washer();
         washer.setWorking(true);
-        washer.getIsWorking();
         washer.work();
     }
 }
