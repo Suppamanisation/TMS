@@ -1,4 +1,4 @@
-package Task1;
+package lec8.Task1;
 
 import java.util.Scanner;
 

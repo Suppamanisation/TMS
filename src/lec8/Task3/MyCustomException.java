@@ -1,4 +1,4 @@
-package Task3;
+package lec8.Task3;
 
 public class MyCustomException extends Exception {
     public MyCustomException(String message) {

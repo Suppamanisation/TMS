@@ -1,4 +1,4 @@
-package Task4;
+package lec8.Task4;
 
 public interface Warer {
     boolean waterIsFull()
