@@ -6,5 +6,10 @@ package lec8.Task4;
 //        запускала программу слива воды, если произошел такой сбой
 
 public class Runner {
-
+    public static void main(String[] args) {
+        Washer washer = new Washer();
+        washer.setWorking(true);
+        washer.getIsWorking();
+        washer.work();
+    }
 }
