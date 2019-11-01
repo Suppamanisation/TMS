@@ -1,4 +1,4 @@
-package lec8.Task4;
+package homework_8.task_4;
 
 public class MyCustomException2 extends Exception{
     public MyCustomException2(String message) {

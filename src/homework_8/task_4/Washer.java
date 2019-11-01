@@ -1,8 +1,12 @@
-package lec8.Task4;
+package homework_8.task_4;
 
 public class Washer {
     public void setWorking(boolean working) {
         isWorking = working;
+    }
+
+    public boolean isWorking() {
+        return isWorking;
     }
 
     private void drainWater() {
