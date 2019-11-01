@@ -13,7 +13,7 @@ public class Washer {
 
     public void work() {
         try {
-            while (isWorking) {
+            while (isWorking = true) {
                 System.out.println("Стираю");
                 if (System.currentTimeMillis() % 5 == 1) {
                     throw new MyCustomException2("Электричество пропало");
