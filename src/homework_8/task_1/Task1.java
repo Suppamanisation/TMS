@@ -11,8 +11,11 @@ public class Task1 {
         System.out.println("Введите первое число");
         double number = sc.nextInt();
         System.out.println("Введите второе число");
+        // старайся не использовать цифры в названии, number2 -> делитель
         double number2 = sc.nextInt();
         try {
+            // названия переменных должны быть соот-но тому, что они содержат, т.е. "говорящими"
+            // number3 -> result
             double number3 = number / number2;
             System.out.println(number3);
         } catch (ArithmeticException e) {
