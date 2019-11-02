@@ -6,6 +6,7 @@ import java.util.Scanner;
 //        Написать метод, который бы парсил строку в число, обработать исключение, которое может быть при неверном формате числа
 public class Task2 {
         public static void main(String[] args) {
+            // str -> numberToParse
             String str = null;
             Scanner scanner = new Scanner(System.in);
             try {
