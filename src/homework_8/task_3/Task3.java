@@ -12,12 +12,14 @@ public class Task3 {
         System.out.println("Введите размер массива не более 15 и не менее 0");
         int index = sc.nextInt();
         try {
+            // 15, 0 - в переменную
             if (index <= 15 && index >= 0) {
                 int[] arr = new int[index];
             } else {
+                // MyCustomException -> WongArraySizeException
                 throw new MyCustomException("Неверный размер массива");
             }
-        } finally {
+        } finally { // зачем блок finally если ты его не используешь?
         }
     }
 }
