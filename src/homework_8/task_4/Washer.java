@@ -13,10 +13,13 @@ public class Washer {
         System.out.println("Вода сливается");
     }
 
-    boolean isWorking;
+    boolean isWorking; // поля класса идут в самом начале класса всегда
 
     public void work() {
         try {
+            // = присвоение
+            // == сравнение
+            // думаю здесь ты хотел сравнить, если так, то достаточно 'while (isWorking)'
             while (isWorking = true) {
                 System.out.println("Стираю");
                 if (System.currentTimeMillis() % 5 == 1) {
