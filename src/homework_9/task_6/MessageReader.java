@@ -26,6 +26,7 @@ public class MessageReader {
         String secret = "";
         try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file)))) {
             String lastLine;
+             // таким образом ты читаешь весь файл, а нужно было только часть с секретным сообщением
             while ((lastLine = br.readLine()) != null) {
                 secret = lastLine;
             }
