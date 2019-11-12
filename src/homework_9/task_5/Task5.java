@@ -18,6 +18,7 @@ public class Task5 {
     public static void main(String[] args) {
         try {
             File file = new File(FILE_PATH);
+            // зачем кусок кода с созданием файла? тебе же прочитать из него надо
             if (!file.createNewFile() && !file.exists()) {
                 throw new IOException();
             }
@@ -27,9 +28,12 @@ public class Task5 {
         }
     }
 
+    // void -> Employee
     private static void inputEmployee(File file) {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))) {
             Employee employee = (Employee) ois.readObject();
+            // return employee;
+            // а на экран в методе мейн
             System.out.println(employee);
         } catch (IOException e) {
             System.err.println("Ошибка чтения данных: " + e.getMessage());

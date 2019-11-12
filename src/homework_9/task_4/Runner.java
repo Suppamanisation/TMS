@@ -11,6 +11,7 @@ public class Runner {
 
     public static void main(String[] args) {
         try {
+            // создание файла в отдельный метод
             File file = new File(FILE_PATH);
             if (!file.createNewFile() && !file.exists()) {
                 throw new IOException();
@@ -32,9 +33,12 @@ public class Runner {
         }
     }
 
+    // void -> Employee
     private static void inputEmployee(File file) {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))) {
             Employee employee = (Employee) ois.readObject();
+            // return employee;
+            // а на экран в методе мейн
             System.out.println(employee);
         } catch (IOException e) {
             System.err.println("Ошибка чтения данных: " + e.getMessage());

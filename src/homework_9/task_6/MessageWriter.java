@@ -23,6 +23,8 @@ public class MessageWriter {
 
     private static void secretOutput(String secret, File file) {
         try (FileOutputStream fos = new FileOutputStream(file, true)) {
+            // когда записывал в файл, стоило запомнить с какого байта начинается твое сообщение, чтобы потом прочимтать его
+            // + кол-во байт в сообщение, чтобы знать сколько байт прочитать
             fos.write(('\n' + secret).getBytes());
             fos.flush();
         } catch (IOException e) {
