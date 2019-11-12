@@ -13,14 +13,15 @@ public class MessageReader {
             }
             String secret = secretInput(file);
             if (!secret.equals("")) {
-                System.out.print("Секретик: " + secret);
+                System.out.println("Секретик: " + secret);
             } else {
-                System.out.print("Нет секретного сообщения");
+                System.out.println("Нет секретного сообщения");
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
 
     private static String secretInput(File file) {
         String secret = "";
