@@ -28,7 +28,6 @@ public class Task2 {
             } catch (IOException e) {
                 System.err.println("Проблемы с изменением файла");;
             }
-// пустая строка не нужна
         } catch (IOException e) {
             System.err.println("Проблемы с созданием файла");
         }
