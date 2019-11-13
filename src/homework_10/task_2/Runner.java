@@ -18,10 +18,11 @@ public class Runner {
         File[] files = directory.listFiles();
         Scanner scanner;
         boolean isCorrect;
-        for (File file : files != null ? files : new File[0]) {
+       // этот огромный for стоит разбить на несколько методов
+        for (File file : files != null ? files : new File[0]) { // этот код очень плохо читается, не стоит так писать 
             System.out.println("Выберите вариант действий с файлом " + file.getName());
             enumMenu();
-            scanner = new Scanner(System.in);
+            scanner = new Scanner(System.in); //  в каждой итерации цика новый Scanner не стоит создавать
             isCorrect = false;
             while (!isCorrect) {
                 try {
@@ -34,7 +35,7 @@ public class Runner {
                     }
                 } catch (IllegalArgumentException e) {
                     System.err.println("Выберите один из вариантов");
-                    scanner = new Scanner(System.in);
+                    scanner = new Scanner(System.in); // здесь точно не нужно создавать новый сканнер
                 }
             }
         }
@@ -43,7 +44,7 @@ public class Runner {
     private static void enumMenu() {
         RenameStrategy[] values = RenameStrategy.values();
         for (RenameStrategy value : values) {
-            System.out.println(value.toString());
+            System.out.println(value.toString()); // не нужно самому вызывать метод toString() он будет вызван автоматически
         }
     }
 }
