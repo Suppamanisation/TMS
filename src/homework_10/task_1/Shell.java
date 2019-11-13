@@ -1,5 +1,6 @@
 package homework_10.task_1;
 
+// +
 public class Shell<T> {
     private T item;
 
