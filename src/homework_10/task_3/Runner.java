@@ -16,7 +16,10 @@ public class Runner {
                 new BMW(12334554667L, (short) 2007, Color.BLACK)};
 
         Garage<Car> garage = new Garage<>("Красная 8, гараж для любых машин");
+        // зачем в конструктор передавать пустой ArrayList и затем заполнять его, сразу передавай заполненный
+        // BMWGarage -> bmwGarage
         Garage<BMW> BMWGarage = new Garage<>("Красная 9, гараж для BMW", new ArrayList<>());
+        // LadaGarage -> ladaGarage
         Garage<Lada> LadaGarage = new Garage<>("Красная 10, гараж для Lada", new ArrayList<>());
 
         for (Car car : cars) {
