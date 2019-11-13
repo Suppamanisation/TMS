@@ -4,6 +4,7 @@ import homework_10.task_3.Car;
 
 import java.util.ArrayList;
 
+// +
 public class Garage<S extends Car> {
     private String address;
     private ArrayList<S> cars;
