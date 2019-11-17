@@ -4,6 +4,7 @@ import java.util.Objects;
 
 /*Task 9
         Есть TreeSet<Student>. Заполните его списком студентов. Если получили исключение, вспомните про интерфейс Comparable или Comparator*/
+// +
 public class Student implements Comparable<Student> {
     private String name;
     private String faculty;
