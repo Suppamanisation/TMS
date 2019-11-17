@@ -4,6 +4,7 @@ package homework_11.task_7;
 
 import java.util.*;
 
+// +
 public class Task7 {
     private static final int SIZE = 100;
 
