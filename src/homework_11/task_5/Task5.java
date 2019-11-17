@@ -2,6 +2,7 @@ package homework_11.task_5;
 
 import java.util.*;
 
+// +
 public class Task5 {
     private static final int SIZE = 100000;
 
