@@ -5,7 +5,8 @@ import java.util.List;
 import java.util.Random;
 
 /*Task 4
-        Есть две коллекции, нужно оставить в первой только те, которые есть во второй*/
+        Есть две коллекции, нужно оставить в первой только те, которые есть во второй*//
+// +
 public class Task4 {
     private static final int SIZE = 20;
 
