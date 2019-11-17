@@ -26,6 +26,7 @@ public class Task2 {
         }
     }
 
+        // delete -> deleteEven
     public static void delete(List<Integer> list) {
         Iterator<Integer> iterator = list.iterator();
         while (iterator.hasNext()) {
