@@ -29,5 +29,6 @@ public class Task11 {
 
         System.out.println(namesTreeSet);
         System.out.println(namesTreeSet.subSet("H", "X"));
+            // а если до Z понадобится? есть вариант метода subset с 4 аргументами
     }
 }
