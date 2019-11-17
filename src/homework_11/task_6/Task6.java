@@ -6,6 +6,7 @@ import java.util.*;
         Есть ArrayList и LinkedList на 100К одинаковых элементов.
         Нужно написать бенчмарк, который бы показал скорость удаления из НАЧАЛА у двух этих листов
         Удалить нужно все элементы*/
+//+
 public class Task6 {
     private static final int SIZE = 100000;
 
