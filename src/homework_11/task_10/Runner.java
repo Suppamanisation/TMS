@@ -30,6 +30,7 @@ public class Runner {
     private static void weightCounter(Set<Fruits> fruitSet, Map<String, Double> allFruitsWeight) {
         for (Fruits fruits : fruitSet) {
             if (allFruitsWeight.containsKey(fruits.getName())) {
+                // лучше не писать такие длинные строки с кодом, а вынести сумму в отдельную переменную
                 allFruitsWeight.put(fruits.getName(), allFruitsWeight.get(fruits.getName()) + fruits.getWeight());
             } else {
                 allFruitsWeight.put(fruits.getName(), fruits.getWeight());
