@@ -4,6 +4,8 @@ import java.util.*;
 
 /*Task 2 (max, String::compareTo / Comparator.naturalOrder())
         Есть коллекция строк, нужно найти строку с максимальной длинной.*/
+
+// +
 public class Task2 {
     public static void main(String[] args) {
         Set<String> strings = new HashSet<>();
