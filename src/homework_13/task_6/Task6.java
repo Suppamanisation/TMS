@@ -7,6 +7,8 @@ import java.util.List;
 
 /*Task 6 (distinct)
         Есть коллекция телефонов, нужно убрать все повторяющиеся*/
+
+// +
 public class Task6 {
     public static void main(String[] args) {
         List<Phone> phones = new ArrayList<>();
