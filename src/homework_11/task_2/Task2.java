@@ -15,7 +15,7 @@ public class Task2 {
         List<Integer> list = new ArrayList<>(SIZE);
         fillList(list);
         System.out.println(list);
-        delete(list);
+        deleteElem(list);
         System.out.println(list);
     }
 
@@ -27,7 +27,7 @@ public class Task2 {
     }
 
         // delete -> deleteEven
-    public static void delete(List<Integer> list) {
+    public static void deleteElem(List<Integer> list) {
         Iterator<Integer> iterator = list.iterator();
         while (iterator.hasNext()) {
             if (iterator.next() % 2 == 0) {
