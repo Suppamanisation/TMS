@@ -23,6 +23,7 @@ public class Task4 {
                 .stream()
                 .filter(integer1 -> integer1 > 22)
                 .findFirst();
+         // а если в коллекции не будет числа > 22? будет исключение, когда ты вызовешь метод get(), добавь проверку
         System.out.println(filteredInt.get());
     }
 }
