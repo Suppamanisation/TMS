@@ -23,6 +23,7 @@ public class Task3 {
         List<String> prod = phones
                 .stream()
                 .map(Phone::getProducer)
+                            // лучше сделать коллекцию из этих слов и вызывать у этой коллекции contains
                 .filter(phone -> phone.contains("Apple") || phone.contains("Samsung") || phone.contains("Xiaomi") || phone.contains("NOKIA"))
                 .collect(Collectors.toList());
         System.out.println(prod);
