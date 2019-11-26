@@ -24,6 +24,7 @@ public class Task9 {
         phones.add(new Phone("ROG Phone", "ASUS", 900));
         System.out.println(phones);
 
+  // твой вариант не оптимальный, дважды нужно итерироваться по коллекции. На лекции я показывал вариант с partitioning, посмотри его
         List<Phone> appleGroup = phones
                 .stream()
                 .filter(phone -> phone.getProducer().contains("Apple"))
@@ -36,6 +37,7 @@ public class Task9 {
                 .collect(Collectors.toList());
         System.out.println(elseGroup);
 ////////////////////////////////////////////////////////////////////////////////////////////
+        // а зачем это повторение?
         Stream<Phone> appleGroup1 = phones
                 .stream()
                 .filter(phone -> phone.getProducer().contains("Apple"));

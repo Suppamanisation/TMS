@@ -13,6 +13,7 @@ public class Task5 {
                 .stream()
                 .limit(5)
                 .reduce((x, y) -> x * y);
+      // а если в коллекция будет пустой? будет исключение, когда ты вызовешь метод get(), добавь проверку
         System.out.println(multiInteger.get());
     }
 }
