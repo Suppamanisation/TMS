@@ -11,6 +11,7 @@ import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) {
+        // используй шаблон String.format() %s, %d
         String str = "Hello, my name is Alex. I'm java developer and I'm glad to become a part of your company.";
         StringBuffer hello = new StringBuffer("Hello, my name is Alex. I'm java developer and I'm glad to become a part of your company.");
         System.out.println(hello);
