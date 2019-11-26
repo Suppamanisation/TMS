@@ -14,6 +14,7 @@ public class StringUtils {
         String[] words = string.split(" ");
         for (int i = 0; i < words.length; i++) {
             String word = words[i];
+            // не самый оптимальный способ, но ок
             if (word.equalsIgnoreCase(new StringBuilder(word)
                     .reverse().toString())) {
                 System.out.println(word);
