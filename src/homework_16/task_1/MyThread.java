@@ -7,6 +7,7 @@ public class MyThread extends Thread {
 
     @Override
     public void run() {
+        // 10 лучше через конструктор
         for (int i = 1; i <= 10; i++) {
             System.out.println(i);
         }
