@@ -33,6 +33,7 @@ public class Store {
 
         @Override
         public void run() {
+            // 50_000 лучше через конструктор
             for (int i = 0; i < 50_000; i++) {
                 store.incrementSync1();
             }
@@ -45,6 +46,7 @@ public class Store {
         ValueIncrement valueIncrement = new ValueIncrement(store);
 
         Runnable runnable_2 = () -> {
+            // 100_000 лучше через конструктор
             for (int i = 0; i < 100_000; i++) {
                 store.incrementSync2();
             }
