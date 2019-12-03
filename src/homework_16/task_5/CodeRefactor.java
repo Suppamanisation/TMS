@@ -7,6 +7,7 @@ package homework_16.task_5;
 Копируйте аккуратно и не внутрь класса CodeRefactor, а рядом с ним.
 */
 
+// +
 public class CodeRefactor {
     public static void main(String[] args) {
         WebSite website = new WebSite("http://www.onliner.by");
