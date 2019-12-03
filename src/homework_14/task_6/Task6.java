@@ -12,6 +12,7 @@ public class Task6 {
         public static void main(String[] args) {
             int[] arr1 = {3, 5, 6, 8, 9};
             int[] arr2 = {0, 1, 2, 4, 7};
+                // это не оптимальное решение, ты теряешь преимущество того, что массивы изначально отсортированы
             int[] res = IntStream.concat(Arrays.stream(arr1), Arrays.stream(arr2)).sorted().toArray();
             System.out.println(Arrays.toString(res));
         }

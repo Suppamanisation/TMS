@@ -13,6 +13,7 @@ public class Man {
     String surname;
     String phoneNumber;
 
+    // не, 3 обычных конструктора должно быть
     public Man(String name, String field, String ... args) {
         this.name = name;
         if (args.length > 0) {

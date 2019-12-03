@@ -31,7 +31,7 @@ public class Task2 {
              FileWriter fw = new FileWriter(filePath2, true)) {
             String strRead;
             while ((strRead = br.readLine()) != null) {
-                if (strRead.toLowerCase().contains("pancakes")) {
+                if (strRead.toLowerCase().contains("pancakes")) { // константа
                     fw.write(strRead + "\n");
                 }
             }

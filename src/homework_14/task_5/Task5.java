@@ -8,6 +8,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+// +
 public class Task5 {
     private static final String PATH = "src/homework_14/task_5/cat";
 
